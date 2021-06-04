@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Salón de Belleza</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+
+    <div class="contenedor-estetica">
+        <div class="imagen"></div>
+        <div class="app">
+            <header class="header">
+                <h1>Salón de Belleza</h1>
+            </header>
+            <nav class="tabs">
+                <button type="button" data-paso="1">Servicios</button>
+                <button type="button" data-paso="2">Información Cliente</button>
+                <button type="button" data-paso="3">Resumen</button>
+            </nav>
+
+            <div id="paso-1" class="seccion">
+                <h2>Servicios</h2>
+                <p class="text-center">Elige tus Servicios a Continuación</p>
+                
+                <div id="servicio" class="listado-servicios"></div>
+            </div>
+
+            <div id="paso-2" class="seccion">
+                <h2>Tus Datos y Cita</h2>
+                <p class="text-center">Coloca tus datos y fecha de tu cita</p>
+
+                <form class="formularios">
+                    <div class="campo">
+                        <label for="Nombre">Nombre</label>
+                        <input id="nombre" type="text" placeholder="Tu Nombre">
+                        
+                    </div>
+
+                    <div class="campo">
+                        <label for="Fecha">Fecha</label>
+                        <input id="fecha" type="date" min="">
+                        
+                    </div>
+
+                    <div class="campo">
+                        <label for="Hora">Hora</label>
+                        <input id="hora" type="time" >
+                        
+                    </div>
+
+
+                </form>
+
+            </div>
+
+            <div id="paso-3" class="seccion contenido-resumen">
+                <h2>Resumen</h2>
+                <p></p>
+            </div>
+
+            <div class="paginacion">
+                <button id="anterior">&lsaquo; Anterior </button>
+                
+                <button id="siguiente">Siguiente &rsaquo; </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>
